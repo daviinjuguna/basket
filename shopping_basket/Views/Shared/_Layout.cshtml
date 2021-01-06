@@ -20,12 +20,12 @@
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav ">
                     @*@<li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
-                    <li>@Html.ActionLink("Shop by Category", "Index", "Categories")</li>
-                    <li>@Html.RouteLink("View all Products", "ProductsIndex")</li>
+                    <li>@Html.ActionLink("Shop by Brand", "Index", "Categories")</li>
+                    <li>@Html.RouteLink("View all Cars", "ProductsIndex")</li>
                     @if (Request.IsAuthenticated && User.IsInRole("Admin")) // only visible if Admin
                     {
                         <li>@Html.ActionLink("Admin", "Index", "Admin")</li>

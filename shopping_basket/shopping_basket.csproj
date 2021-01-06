@@ -197,36 +197,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202012290922102_InitialCreate.cs" />
-    <Compile Include="Migrations\202012290922102_InitialCreate.Designer.cs">
-      <DependentUpon>202012290922102_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012291638442_InitialDatabase.cs" />
-    <Compile Include="Migrations\202012291638442_InitialDatabase.Designer.cs">
-      <DependentUpon>202012291638442_InitialDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012291926399_ProductImages.cs" />
-    <Compile Include="Migrations\202012291926399_ProductImages.Designer.cs">
-      <DependentUpon>202012291926399_ProductImages.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012300825103_twocontextreset.cs" />
-    <Compile Include="Migrations\202012300825103_twocontextreset.Designer.cs">
-      <DependentUpon>202012300825103_twocontextreset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012300827122_update_user_fields.cs" />
-    <Compile Include="Migrations\202012300827122_update_user_fields.Designer.cs">
-      <DependentUpon>202012300827122_update_user_fields.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101011541092_AddBasketLine.cs" />
-    <Compile Include="Migrations\202101011541092_AddBasketLine.Designer.cs">
-      <DependentUpon>202101011541092_AddBasketLine.cs</DependentUpon>
+    <Compile Include="Migrations\202101060938500_InitialDatabase.cs" />
+    <Compile Include="Migrations\202101060938500_InitialDatabase.Designer.cs">
+      <DependentUpon>202101060938500_InitialDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Basket.cs" />
     <Compile Include="Models\BasketLine.cs" />
-    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
@@ -349,23 +329,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202012290922102_InitialCreate.resx">
-      <DependentUpon>202012290922102_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012291638442_InitialDatabase.resx">
-      <DependentUpon>202012291638442_InitialDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012291926399_ProductImages.resx">
-      <DependentUpon>202012291926399_ProductImages.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012300825103_twocontextreset.resx">
-      <DependentUpon>202012300825103_twocontextreset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012300827122_update_user_fields.resx">
-      <DependentUpon>202012300827122_update_user_fields.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101011541092_AddBasketLine.resx">
-      <DependentUpon>202101011541092_AddBasketLine.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202101060938500_InitialDatabase.resx">
+      <DependentUpon>202101060938500_InitialDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

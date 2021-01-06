@@ -33,7 +33,7 @@ namespace shopping_basket.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Brand category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -52,7 +52,7 @@ namespace shopping_basket.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name")] Category category)
+        public ActionResult Create([Bind(Include = "ID,Name")] Brand category)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace shopping_basket.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Brand category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -84,7 +84,7 @@ namespace shopping_basket.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name")] Category category)
+        public ActionResult Edit([Bind(Include = "ID,Name")] Brand category)
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,7 @@ namespace shopping_basket.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Category category = db.Categories.Find(id);
+            Brand category = db.Categories.Find(id);
             if (category == null)
             {
                 return HttpNotFound();
@@ -115,7 +115,7 @@ namespace shopping_basket.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Category category = db.Categories.Find(id);
+            Brand category = db.Categories.Find(id);
             foreach (var p in category.Products)
             {
                 p.CategoryID = null;

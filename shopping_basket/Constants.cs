@@ -9,7 +9,7 @@ namespace shopping_basket
     {
         public const string ProductImagePath = "~/Content/ProductImages/";
         public const string ProductThumbnailPath = "~/Content/ProductImages/Thumbnails/";
-        public const int PagedItems = 3;
+        public const int PagedItems = 5;
 
     }
 }

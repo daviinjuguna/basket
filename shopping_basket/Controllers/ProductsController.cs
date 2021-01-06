@@ -50,7 +50,7 @@ namespace shopping_basket.Controllers
             if (!String.IsNullOrEmpty(category))
             {
                 products = products.Where(product => product.Category.Name == category);
-                viewModel.Category = category;
+                viewModel.Brand = category;
             }
             //sort the results by price
             switch (sortBy)

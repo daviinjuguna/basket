@@ -13,7 +13,7 @@ namespace shopping_basket.ViewModel
         public PagedList.IPagedList<Products> Products { get; set; }
         public String Search { get; set; }
         public IEnumerable<CategoryWithCount> CategoryWithCounts { get; set; }
-        public String Category { get; set; }
+        public String Brand { get; set; }
         public string SortBy { get; set; }
         public Dictionary<string, string> Sorts { get; set; }
         public IEnumerable<SelectListItem> CatsFilterItem

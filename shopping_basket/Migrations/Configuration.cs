@@ -17,25 +17,26 @@ namespace shopping_basket.Migrations
 
         protected override void Seed(shopping_basket.Model.store.Context context)
         {
-            var categories = new List<Category>
+            var categories = new List<Brand>
             {
-                new Category {Name = "Computers and Tablets" },
-                new Category{Name = "Screens"},
-                new Category{Name="Mobile and Phones"},
-                new Category{Name = "Gaming"}
+                new Brand{Name ="Subaru"},
+                new Brand{Name ="Mercedes"},
+                new Brand{Name ="Nissan"},
+                new Brand{Name ="SRT"},
             };
             categories.ForEach(c => context.Categories.AddOrUpdate(p => p.Name, c));
             context.SaveChanges();
 
             var products = new List<Products>
     {
-new Products {Name = "Lenovo 510", Description = "All in one", Price =631, CategoryID = categories.Single(c=>c.Name == "Computers and Tablets").ID},
-new Products {Name = "ASUS Strix GeForce", Description = "GTX1060Grpahics Card 6GB", Price = 573, CategoryID= categories.Single(c=>c.Name == "Computers and Tablets").ID},
-new Products {Name = "ASUS VE248", Description = "LED Gaming Monitor",Price = 239, CategoryID= categories.Single(c=>c.Name == "Screens").ID},
-new Products {Name = "Samsung S32351", Description = "Full HD LEDMonitor", Price = 369, CategoryID= categories.Single(c=>c.Name == "Screens").ID},
-new Products {Name = "Apple Iphone", Description = "32GB 3GB", Price = 260.99M, CategoryID= categories.Single(c=>c.Name == "Mobile and Phones").ID},
-new Products {Name = "Microsoft Home 10", Description = "64 bit", Price= 171, CategoryID= categories.Single(c=>c.Name == "Mobile and Phones").ID},
- new Products {Name = "Microsoft XBox One X", Description = "1 TB",Price = 749, CategoryID= categories.Single(c=>c.Name == "Gaming").ID},
+                new Products{Name="Dodge Challenger",Description="American Muscle",Price=20040,CategoryID = categories.Single(b=>b.Name=="SRT").ID},
+                new Products{Name="Dodge Charger",Description="American Muscle",Price=12040,CategoryID = categories.Single(b=>b.Name=="SRT").ID},
+                new Products{Name="G-Class",Description="Luxury Suv",Price=120040,CategoryID = categories.Single(b=>b.Name=="Mercedes").ID},
+                new Products{Name="SLR McLaren",Description="Sports Car",Price=90040,CategoryID = categories.Single(b=>b.Name=="Mercedes").ID},
+                new Products{Name="Impreza Premium",Description="Sedan",Price=50040,CategoryID = categories.Single(b=>b.Name=="Subaru").ID},
+                new Products{Name="Legacy Outback",Description="Station Wagon",Price=70040,CategoryID = categories.Single(b=>b.Name=="Subaru").ID},
+                new Products{Name="GTR-Nissmo",Description="Luxury Sports Car",Price=1520040,CategoryID = categories.Single(b=>b.Name=="Nissan").ID},
+                new Products{Name="Dodge Viper",Description="American Muscle, Sports Car",Price=320040,CategoryID = categories.Single(b=>b.Name=="SRT").ID},
             };
             products.ForEach(c => context.Products.AddOrUpdate(p => p.Name, c));
             context.SaveChanges();

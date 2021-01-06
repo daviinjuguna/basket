@@ -17,6 +17,6 @@ namespace shopping_basket.Models
         public int? CategoryID { get; set; }
 
         [Display(Name = "Brand")]
-        public virtual Category Category { get; set; }
+        public virtual Brand Category { get; set; }
     }
 }

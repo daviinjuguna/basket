@@ -20,7 +20,7 @@ namespace shopping_basket.Model.store
         {
         }
 
-        public System.Data.Entity.DbSet<shopping_basket.Models.Category> Categories { get; set; }
+        public System.Data.Entity.DbSet<shopping_basket.Models.Brand> Categories { get; set; }
 
         public System.Data.Entity.DbSet<shopping_basket.Models.Products> Products { get; set; }
         public System.Data.Entity.DbSet<shopping_basket.Models.ProductImage> ProductImages { get; set; }
